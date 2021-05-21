@@ -1,0 +1,235 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS Variables */
+:root{
+    --navbar-height: 3.75rem;
+}
+/* Navigation Bar */
+#navbar{
+    position: sticky;
+    top: 0rem;
+    display: flex;
+    align-items: center;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    height: 3.5rem;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+/* Navigation Bar Logo & Image */
+#logo{
+    margin: 1.0rem 4.0rem;
+}
+#logo a{
+    font-size: 2.0rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: pink;
+    margin: 0.25rem 0.25rem;
+}
+/* Navigation Bar Listing Style */
+#navbar ul{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 0.25rem 1.25rem;
+    border-radius: 1.25rem;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+.login{
+    font-size: 1.25rem;
+    padding: 0.25rem 1.25rem;
+    border: 1px solid white;
+    background-color: lightseagreen;
+    color: white;
+    margin: 0rem 0rem 0.75rem 12.5rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem 12.5rem;
+    height: 30.0rem;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url(img1.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Services Section */
+.services-container{
+    background-color: cornsilk;
+}
+#services{
+    margin: 1.5rem 2.25rem 0px 2.25rem;
+    display: flex;
+}
+#services .box{
+    border: 2px solid green;
+    padding: 1.25rem;
+    margin: 0.75rem 0.75rem 2.0rem 0.75rem;
+    border-radius: 2.5rem;
+    background-color: ivory;
+}
+#services .box img{
+    height: 6.25rem;
+    display: block;
+    margin: auto;
+    border-radius: 10%;
+}
+#services .box p{
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Client section */
+#client-section{
+
+}
+#client-section::before{
+    content: "";
+    background: url(img5.jpg) no-repeat center center/cover;
+    position: absolute;
+    left: 0rem;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 2.125rem;
+}
+#clients img{
+    height: 24.55rem;
+    border-radius: 50%;
+}
+/* Contact Section */
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url(img7.jpg) no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.125rem;
+}
+.form-group{
+    width:95%;
+}
+#contact-box input{
+    width: 100%;
+    margin: 5px;
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    font-size: 1.1rem;
+}
+#contact-box textarea{
+    width: 98%;
+    margin: 0.375rem;
+    padding: 1.0rem;
+    border-radius: 0.75rem;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 50%;
+    border: 1px solid gray;
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+}
+#contact-box label{
+    font-size: 1.25rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.submit{
+    padding: 0.375rem 1.25rem;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin-left: 85%;
+    font-size: 1.5rem;
+    border-radius: 1.0rem;
+    cursor: pointer;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 0.5rem 1.25rem;
+}
+/* Utility Classes */
+.h-primary{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3.0rem;
+    padding: 1.0rem;
+}
+.h-secondary{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.0rem;
+    padding: 1.0rem;
+}
+.btn{
+    padding: 0.375rem 1.25rem;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 1.0rem;
+    font-size: 1.5rem;
+    border-radius: 1.0rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
